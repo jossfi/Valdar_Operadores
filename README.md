@@ -4,7 +4,7 @@ def verificar_palabra():
     palabra = input("Ingresa una palabra: ").strip()
     longitud = len(palabra)
 
-    if longitud == 0:          #condiciones para respuesta
+   if longitud == 0:          #condiciones para respuesta
         print("❌ No se ingresó ninguna palabra.\n")
     elif 4 <= longitud <= 8:
         print("✅ La palabra es correcta.\n")
@@ -18,7 +18,6 @@ def verificar_cuadrante():
     try: #captura datos
         x = float(input("Ingrese la coordenada X: "))
         y = float(input("Ingrese la coordenada Y: "))
-
         if x == 0 or y == 0: #menú de condiciones para identificar cuadrante
             print("❌ Ninguna coordenada debe ser 0.\n")
         elif x > 0 and y > 0:
@@ -45,7 +44,6 @@ def programa_principal(): #main
     while True: #condicionales del menú
         mostrar_menu()
         opcion = input("Selecciona una opción (1-3): ").strip()
-
         if opcion == "1":
             verificar_palabra()
         elif opcion == "2":
