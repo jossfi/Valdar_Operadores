@@ -1,0 +1,1 @@
+# Valdar_Operadores
